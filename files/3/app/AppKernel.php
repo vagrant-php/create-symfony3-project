@@ -66,7 +66,7 @@ class AppKernel extends Kernel
             if (is_file($runtimeDirConfigFile)) {
                 $this->runtimeDir = require $runtimeDirConfigFile;
             } else {
-                $this->runtimeDir = $this->getRootDir() . '/var';
+                $this->runtimeDir = $this->getRootDir() . '/../var';
             }
         }
 
